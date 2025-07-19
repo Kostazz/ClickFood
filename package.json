@@ -1,5 +1,4 @@
 npm init -y
-
 {
   "name": "clickfood",
   "private": true,
@@ -16,5 +15,4 @@ npm init -y
     "concurrently": "^8.2.0"
   }
 }
-
 npm install
