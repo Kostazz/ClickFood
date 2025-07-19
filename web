@@ -1,2 +1,29 @@
 pwd
 ls
+root@bd41e00e0c7a:/workspace/ClickFood# dmesg | tail -n 20
+[    0.377869] pci 0000:00:05.0: [1af4:1042] type 00 class 0x018000 conventional
+ PCI endpoint
+[    0.378018] pci 0000:00:05.0: BAR 0 [mem 0xd3f80000-0xd3ffffff]
+[    0.379537] pci 0000:00:05.0: BAR 0 [mem 0xc0000000-0xc007ffff]: assigned
+[    0.381283] virtio-pci 0000:00:05.0: enabling device (0000 -> 0002)
+[    0.382403] virtio_blk virtio5: 1/0/0 default/read/poll queues
+[    0.384873] virtio_blk virtio5: [vda] 134217728 512-byte logical blocks (68.7
+ GB/64.0 GiB)
+[    0.416864] EXT4-fs (vda): recovery complete
+[    0.416883] EXT4-fs (vda): mounted filesystem 79f0e325-ac4c-4e0c-b7e1-cd7d9ec
+8095d r/w with ordered data mode. Quota mode: disabled.
+[    0.443284] systemd[141]: dbus.service: Failed to connect stdout to the journ
+al socket, ignoring: No such file or directory
+[    0.446832] systemd[1]: Started D-Bus System Message Bus.
+[    0.453830] systemd[1]: cgroup compatibility translation between legacy and u
+nified hierarchy settings activated. See cgroup-compat debug messages for detail
+s.
+[    0.454082] systemd[1]: Started kata-agent container.
+[    0.482796] ACPI: CPU1 has been hot-added
+[    0.482966] ACPI: CPU2 has been hot-added
+[    0.547013] smpboot: Booting Node 0 Processor 1 APIC 0x1
+[    0.548611] [Firmware Bug]: CPUID leaf 0xb subleaf 1 APIC ID mismatch 1 != 0
+[    0.575405] smpboot: Booting Node 0 Processor 2 APIC 0x2
+[    0.606983] Fallback order for Node 0: 0
+[    0.606986] Built 1 zonelists, mobility grouping on.  Total pages: 536527
+[    0.606989] Policy zone: Normal
