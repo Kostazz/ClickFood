@@ -1,1 +1,20 @@
 npm init -y
+
+{
+  "name": "clickfood",
+  "private": true,
+  "workspaces": [
+    "web",
+    "api"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm --workspace web run dev\" \"npm --workspace api run dev\"",
+    "web": "npm --workspace web run dev",
+    "api": "npm --workspace api run dev"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
+
+npm install
